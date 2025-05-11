@@ -91,7 +91,7 @@ export default function Home() {
           <div className="container py-20 md:py-32 relative z-10">
             <div className="max-w-3xl">
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-                <h1 className="text-4xl md:text-6xl font-bold mb-6">Libyan National Digital Health Policy</h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6">National Digital Health Policy</h1>
               </motion.div>
 
               <motion.p

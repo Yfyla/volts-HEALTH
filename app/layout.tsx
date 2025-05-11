@@ -7,9 +7,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "getwellcheck - Libyan National Digital Health Policy",
+  title: "getwellcheck - National Digital Health Policy",
   description: "Transforming healthcare through digital innovation for better patient outcomes and system efficiency",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
