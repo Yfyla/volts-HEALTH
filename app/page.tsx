@@ -38,7 +38,34 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-sm">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="font-bold text-xl text-teal-600">getwellcheck</div>
+            <div className="relative group">
+              <div className="font-bold text-xl text-teal-600 group-hover:text-teal-700 transition-colors">getwellcheck</div>
+              {/* Animated ECG Line */}
+              <motion.div
+                className="absolute -bottom-1 left-0 right-0 h-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+              >
+                <svg width="100%" height="100%" viewBox="0 0 200 20" preserveAspectRatio="none">
+                  <motion.path
+                    d="M0,10 L20,10 L30,5 L40,15 L50,10 L70,10 L90,10 L110,10 L130,10 L150,10 L170,10 L190,10 L200,10"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="none"
+                    className="text-teal-600 group-hover:text-teal-700 transition-colors"
+                    initial={{ pathLength: 0 }}
+                    animate={{ pathLength: 1 }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatType: "loop",
+                      ease: "easeInOut"
+                    }}
+                  />
+                </svg>
+              </motion.div>
+            </div>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#home" className="text-sm font-medium hover:text-teal-600 transition-colors">
