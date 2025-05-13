@@ -42,7 +42,7 @@ export default function Home() {
               <div className="font-bold text-xl text-teal-600 group-hover:text-teal-700 transition-colors">getwellcheck</div>
               {/* Animated ECG Line */}
               <motion.div
-                className="absolute -bottom-1 left-0 right-0 h-4"
+                className="absolute -bottom-2 left-0 right-0 h-6"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
@@ -51,13 +51,13 @@ export default function Home() {
                   <motion.path
                     d="M0,10 L20,10 L30,5 L40,15 L50,10 L70,10 L90,10 L110,10 L130,10 L150,10 L170,10 L190,10 L200,10"
                     stroke="currentColor"
-                    strokeWidth="2"
+                    strokeWidth="3"
                     fill="none"
                     className="text-teal-600 group-hover:text-teal-700 transition-colors"
                     initial={{ pathLength: 0 }}
                     animate={{ pathLength: 1 }}
                     transition={{
-                      duration: 2,
+                      duration: 1.5,
                       repeat: Infinity,
                       repeatType: "loop",
                       ease: "easeInOut"
